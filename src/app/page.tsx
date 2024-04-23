@@ -1,9 +1,10 @@
-import { Button } from "@nextui-org/button";
+'use client';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-      <Button>hello</Button>
-    </main>
+    <div className="flex h-full flex-row bg-red-300">
+      <span>hello, world!</span>
+      <div className="flex-1 bg-amber-50">flex-1 test</div>
+    </div>
   );
 }
