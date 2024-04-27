@@ -1,10 +1,12 @@
 /* eslint-disable react-refresh/only-export-components */
-import type React from 'react';
+import './globals.css';
+
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from 'next-themes';
+import type React from 'react';
+
 import { Providers } from './providers';
-import './globals.css';
 import RootHeader from '@/app/_components/root-header';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -22,9 +24,9 @@ export default function RootLayout({ children }: Readonly<{
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <Providers>
-            <main className="flex min-h-screen w-screen flex-col bg-background text-foreground ">
+            <main className="flex min-h-screen w-full flex-col bg-background text-foreground ">
               <RootHeader />
-              <div className="mx-auto flex-1 lg:w-1/2">
+              <div className="mx-auto min-h-[calc(100vh_-_64px_-_108px)] flex-1  lg:w-1/2 ">
                 {children}
               </div>
             </main>

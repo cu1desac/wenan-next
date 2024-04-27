@@ -25,6 +25,7 @@ export default antfu(
   },
   ...compat.extends('airbnb/hooks'),
   ...compat.extends('plugin:tailwindcss/recommended'),
+  //
 
   // ...compat.config({
   //   // plugins: ['import'],
