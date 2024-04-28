@@ -10,11 +10,14 @@ export default function NoteCard(): React.ReactNode {
     '可不但没有被重视',
     '还引来一阵嘲讽',
     '但赛尔知道这一定代表着什么',
+    '333',
+    'sdsadasdasdsad',
+    '还就那个起飞了了了乐乐啊',
   ];
   return (
   // tanstack s
     <div
-      className=" flex min-h-32 w-[350px]  flex-col justify-start gap-6 rounded-lg border-2 border-transparent  p-6 text-success shadow-xl shadow-success-700/20 transition-all hover:border-current hover:border-success-300 "
+      className="flex min-h-32 w-[350px]  flex-col justify-start gap-6 rounded-lg border-2 border-transparent  p-6 text-success shadow-xl shadow-success-700/20 transition-all hover:border-current hover:border-success-300 "
     >
       <ul className="flex flex-col justify-center gap-2 text-start text-foreground">
         {sentences.map((sentence, index) => {
